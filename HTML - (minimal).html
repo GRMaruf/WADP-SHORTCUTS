@@ -23,14 +23,6 @@
       background-color: #333;
     }
 
-    .footer {
-      overflow: hidden;
-      margin-top: 60px;
-      color: #f2f2f2;
-      text-align: center;
-      background-color: #333;
-    }
-
     #navbar a {
       float: left;
       display: block;
@@ -46,13 +38,67 @@
       color: black;
     }
 
-    #navbar a.active {
-      background-color: #04AA6D;
-      color: white;
+    .footer {
+      overflow: hidden;
+      margin-top: 60px;
+      color: #f2f2f2;
+      text-align: center;
+      background-color: #333;
     }
 
     .content {
       padding: 16px;
+    }
+
+    .form-card {
+      background-color: #f1f1f1;
+      margin: auto;
+      width: 400px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 20px;
+    }
+
+    .form-card label {
+      font-weight: bold;
+      display: block;
+    }
+
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type=checkbox],
+    input[type=radio] {
+      padding: 12px;
+      margin-top: 6px;
+      margin-bottom: 6px;
+    }
+
+    .checking {
+      margin-bottom: 10px;
+    }
+
+    input[type=submit] {
+      background-color: #000;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      opacity: 0.7;
     }
 
     .card {
@@ -106,7 +152,6 @@
     tr:hover {
       color: #04AA6D;
     }
-
   </style>
 </head>
 
@@ -126,6 +171,46 @@
   <div class="content">
     <h2>Sticky Navigation Example</h2>
     <p>The navbar will stick to the top when you reach its scroll position.</p>
+  </div>
+
+  <div class="content">
+    <h2 style="text-align:center">Register Form</h2>
+    <div class="form-card">
+      <form>
+
+        <label>Label</label>
+        <input type="text" name="" placeholder="..">
+
+        <label>Label</label>
+        <input type="text" name="" placeholder="..">
+
+        <label>Label</label>
+        <select name="">
+          <option value="">Option</option>
+          <option value="">Option</option>
+          <option value="">Option</option>
+        </select>
+
+        <label>Label</label>
+        <div class="checking">
+          <input type="checkbox" name="checkbox_choice" value="">Option<br>
+          <input type="checkbox" name="checkbox_choice" value="">Option<br>
+          <input type="checkbox" name="checkbox_choice" value="">Option<br>
+        </div>
+
+        <label>Label</label>
+        <div class="checking">
+          <input type="radio" name="radio_choice" value="">Option<br>
+          <input type="radio" name="radio_choice" value="">Option<br>
+          <input type="radio" name="radio_choice" value="">Option<br>
+        </div>
+
+        <label>Label</label>
+        <textarea name="" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
   </div>
 
   <div class="content">
